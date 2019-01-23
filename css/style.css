@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    background-color: #f9f9f9;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+    box-shadow: #bdbcbc 0px 1px 4px 0px;
+    background-color: #fdfdfd;
+}
+
+header .logo {
+    width: 130px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 7px 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #8b8b8b;
+}
+
+.active {
+    color: #8b8b8b;
+}
+
+.page-bar {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    box-shadow: #bdbcbc 0px 1px 4px 0px;
+}
+
+.page-bar p {
+    color: rgb(212, 212, 212);
+    font-size: 22px;
+}
+
+@media(min-width:768px) {
+
+    header .logo {
+        width: 150px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+}

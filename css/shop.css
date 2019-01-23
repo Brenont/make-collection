@@ -1,0 +1,31 @@
+
+.container-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-products .product {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-products .product img {
+    width: auto;
+    height: 150px;
+}
+
+.container-products .product h4 {
+    padding: 8px 0px;
+}
+
+.container-products .product a {
+    border: none;
+    padding: 6px 15px;
+    background: rgb(22, 22, 22);
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    text-decoration: none;
+}
