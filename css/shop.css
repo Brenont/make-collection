@@ -1,11 +1,15 @@
-
 .container-products {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    /* flex-direction: column; */
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .container-products .product {
-    padding: 15px 20px;
+    padding: 15px 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +28,16 @@
 .container-products .product a {
     border: none;
     padding: 6px 15px;
-    background: rgb(22, 22, 22);
-    color: rgb(196, 196, 196);
+    /* background: #161616; */
+    background-color: #282828;
+    color: #e6e6e6;
     cursor: pointer;
     text-decoration: none;
+}
+
+@media(min-width:768px){
+
+    .container-products .product {
+        padding: 25px 110px;
+    }
 }

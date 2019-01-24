@@ -53,7 +53,8 @@ nav a:hover {
 
 .page-bar {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
+    background-color: #282828;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,17 +63,54 @@ nav a:hover {
 }
 
 .page-bar p {
-    color: #d4d4d4;
+    color: #e6e6e6;
     font-size: 22px;
 }
 
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carrossel div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.carrossel img {
+    height: 100px;
+    width: auto;
+}
+
+.container-sociais {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px 20px;
+}
+
+.container-sociais a {
+    text-decoration: none;
+}
+
+.container-sociais a img {
+    height: 45px;
+    width: auto;
+    padding: 0px 15px;
+}
+
+/* FOOTER */
 footer {
-    background: #000;
+    /* background: #000; */
+    background-color: #282828;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8px;
+    height: 50px;
     color: #d4d4d4;
     margin-top: 15px;
 }
