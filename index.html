@@ -13,26 +13,32 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- FONTS LINKS -->
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 </head>
 
 <body>
     <header>
         <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+        <p class="slogan">feito pra quem faz</p>
         <nav>
             <a href="shop.html">shop</a>
             <a href="https://www.instagram.com/makecollection_/?hl=pt-br" target="_blank">insta</a>
             <a href="lookbooks.html">lookbooks</a>
-            <a href="projects.html">projects</a>
+            <a href="projects.html">projetos</a>
         </nav>
     </header>
 
     <main id="content">
-        <div class="carrossel single-item">
-            <div><img src="img/t-shirt.png" alt="1"></div>
-            <div><img src="img/t-shirt.png" alt="2"></div>
-            <div><img src="img/t-shirt.png" alt="3"></div>
-        </div>
+        <section class="container-carrossel">
+            <div class="arrow-left"></div>
+            <div class="carrossel single-item">
+                <div class="slide-container"><img src="img/slide-test.jpg" alt="1"></div>
+                <div class="slide-container"><img src="img/slide-test.jpg" alt="2"></div>
+                <div class="slide-container"><img src="img/slide-test.jpg" alt="3"></div>
+            </div>
+            <div class="arrow-right"></div>
+        </section>
     </main>
 
     <!-- <footer>
@@ -41,6 +47,7 @@
     </footer> -->
 
     <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/footer.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/carrossel.js"></script>

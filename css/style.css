@@ -25,9 +25,15 @@ header {
 }
 
 header .logo {
-    width: 130px;
+    width: 145px;
     height: auto;
+}
+
+header .slogan {
+    font-family: 'Playfair Display', serif;
     padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 nav {
@@ -67,29 +73,46 @@ nav a:hover {
     font-size: 22px;
 }
 
-.carrossel {
+.container-carrossel {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* flex-direction: column; */
 }
 
-.carrossel div {
+.arrow-left, .arrow-right{
+    width: 50px;
+    height: 50px;
+    color: #282828;
+    background-color: #5c5c5c;
+}
+
+.carrossel {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 85vw;
+}
+
+/* .carrossel .slide-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+*/
+
 .carrossel img {
-    height: 100px;
+    height: 250px;
     width: auto;
-}
+} 
 
 .container-sociais {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 5px 20px;
+    /* padding: 10px 5px 20px; */
+    padding: 20px 5px 15px;
 }
 
 .container-sociais a {
@@ -105,19 +128,34 @@ nav a:hover {
 /* FOOTER */
 footer {
     /* background: #000; */
-    background-color: #282828;
+    /* background-color: #282828; */
+    background-color: #e0dede;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50px;
-    color: #d4d4d4;
+    /* height: 50px; */
+    color: #2f2f2f;
     margin-top: 15px;
+    box-shadow: #636363 0px 0px 7px;
 }
 
-footer a {
-    color: #d4d4d4;
+footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    justify-content: flex-start;
+    margin: 3px 5px 3px 25px;
+    color: #5c5c5c;
+}
 
+footer .footer-links a, .footer-links h3 {
+    padding: 3px 0px;
+    font-size: 18px;
+    color: #5c5c5c;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 @media(min-width:768px) {
