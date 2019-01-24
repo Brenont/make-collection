@@ -2,36 +2,36 @@
     "products": [{
             "img": "img/t-shirt.png",
             "name": "T-shirt OldTech",
-            "status" : true,
+            "soldOut" : false,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },
         {
             "img": "img/t-shirt.png",
             "name": "T-shirt OldTech2",
-            "status" : false,
+            "soldOut" : true,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },
         {
             "img": "img/t-shirt.png",
             "name": "T-shirt OldTech3",
-            "status" : true,
+            "soldOut" : true,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },{
             "img": "img/t-shirt.png",
             "name": "T-shirt OldTech4",
-            "status" : true,
+            "soldOut" : false,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },
         {
             "img": "img/t-shirt.png",
             "name": "T-shirt OldTech5",
-            "status" : true,
+            "soldOut" : false,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },
         {
             "img": "img/t-shirt.png",
             "name": "T-shirt OldTech6",
-            "status" : false,
+            "soldOut" : true,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         }
     ]

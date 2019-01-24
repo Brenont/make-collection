@@ -16,7 +16,11 @@ function buildShop(_product) {
 
     product.appendChild(buildImg(_product.img));
     product.appendChild(buildTitle("h4", _product.name));
-    product.appendChild(buildButton(_product.link, "Comprar"));
+    if (_product.soldOut) {
+        product.appendChild(buildButton(false, "Esgotado", "soldOut-button"))
+    } else {
+        product.appendChild(buildButton(_product.link, "Comprar", "buy-button"));
+    }
 
     containerProducts.appendChild(product);
 }
@@ -35,11 +39,14 @@ function buildImg(imgSrc) {
     return imgSelector;
 }
 
-function buildButton(link, _text) {
+function buildButton(link, _text, _classe) {
     var button = document.createElement("a");
     button.textContent = _text;
-    button.href = link;
-    button.target = "_blank"
+    if (link !== false) {
+        button.href = link;
+    }
+    button.target = "_blank";
+    button.classList.add(_classe);
 
     return button;
 }

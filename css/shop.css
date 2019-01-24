@@ -25,7 +25,7 @@
     padding: 8px 0px;
 }
 
-.container-products .product a {
+.container-products .product .buy-button {
     border: none;
     padding: 6px 15px;
     /* background: #161616; */
@@ -33,6 +33,12 @@
     color: #e6e6e6;
     cursor: pointer;
     text-decoration: none;
+}
+
+.container-products .product .soldOut-button {
+    /* color: #333; */
+    color: maroon;
+    font-size: 18px;
 }
 
 @media(min-width:768px){
