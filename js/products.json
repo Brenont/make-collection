@@ -1,37 +1,20 @@
 {
     "products": [{
-            "img": "img/t-shirt.png",
-            "name": "T-shirt OldTech",
+            "img": "img/Tshirt-Apple.png",
+            "name": "T-Shirt Apple 80's",
             "soldOut" : false,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },
         {
-            "img": "img/t-shirt.png",
-            "name": "T-shirt OldTech2",
-            "soldOut" : true,
-            "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
-        },
-        {
-            "img": "img/t-shirt.png",
-            "name": "T-shirt OldTech3",
-            "soldOut" : true,
-            "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
-        },{
-            "img": "img/t-shirt.png",
-            "name": "T-shirt OldTech4",
+            "img": "img/Tshirt-Pena.png",
+            "name": "T-Shirt Quills",
             "soldOut" : false,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         },
         {
-            "img": "img/t-shirt.png",
-            "name": "T-shirt OldTech5",
+            "img": "img/Tshirt-TV.png",
+            "name": "T-Shirt MakeTech",
             "soldOut" : false,
-            "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
-        },
-        {
-            "img": "img/t-shirt.png",
-            "name": "T-shirt OldTech6",
-            "soldOut" : true,
             "link": "https://produto.mercadolivre.com.br/MLB-1161492897-camisa-high-tag-t-shirt-high-company-drop-2019-skate-swag-_JM?quantity=1"
         }
     ]
