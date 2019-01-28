@@ -24,6 +24,10 @@ header {
     background-color: #fdfdfd;
 }
 
+.header-with-page-bar{
+    padding: 10px 0px 0px;
+}
+
 header .logo {
     width: 145px;
     height: auto;
@@ -40,6 +44,7 @@ nav {
     display: flex;
     justify-items: center;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 nav a {

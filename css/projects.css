@@ -1,0 +1,47 @@
+main{
+    display: flex;
+}
+
+.container-projects, .project-one{
+    width: 100%;
+}
+
+.project-one{
+    padding: 25px 0px;
+}
+
+.container-projects, .project-one, .project-one a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr{
+    height: 1px;
+    background-color: #68686844;
+    width: 85%;
+    border: none;
+}
+
+.project-one a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.project-one .project-img {
+    height: 80px;
+    /* max-width: 250px; */
+    width: auto;
+}
+
+.project-one h1 {
+    font-size: 23px;
+    padding: 10px 0px 20px;
+}
+
+.soon-project{
+    color: #5c5c5c;
+    font-size: 20px;
+}
