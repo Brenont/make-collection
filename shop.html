@@ -12,10 +12,15 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script src="js/modal.js"></script>
+
+    <!-- MODAL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
-    <header>
+    <header class="header-with-page-bar">
         <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
         <p class="slogan">feito pra quem faz</p>
         <nav>
@@ -24,14 +29,24 @@
             <a href="lookbooks.html">lookbooks</a>
             <a href="projects.html">projetos</a>
         </nav>
+            <div class="page-bar">
+                <p>SHOP</p>
+            </div>
     </header>
 
     <main id="content">
-        <div class="page-bar">
-            <p>SHOP</p>
-        </div>
 
         <section class="container-products" id="container-products"></section>
+
+        <div id="modal-buy" class="modal">
+            <p>Prezado cliente, visando  conforto e segurança no ato da compra, nossas vendas são realizadas através do Mercado Livre.</p>
+            <div class="container-btt">
+                <a class="modal-buy-button"><button>Comprar</button></a>
+                <img class="ml-icon-modal" src="img/ml-icon.png" alt="">
+            </div>
+          </div>
+
+          <!-- <p><a href="#modal-buy" rel="modal:open" class="open-modal">Open Modal</a></p> -->
 
     </main>
 
@@ -55,6 +70,9 @@
     <script src="js/jquery.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/products.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>

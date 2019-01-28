@@ -1,15 +1,15 @@
 var containerProducts = document.querySelector("#container-products");
 
 $.getJSON("js/products.json", function (data) {
-    var products = data.products;
+    const products = data.products;
 
-    products.forEach(function (product) {
-        buildShop(product);
+    products.forEach(function (product, index) {
+        buildShop(product, index);
     });
 
 });
 
-function buildShop(_product) {
+function buildShop(_product, _index) {
 
     var product = document.createElement('div');
     product.classList.add("product");
@@ -43,10 +43,26 @@ function buildButton(link, _text, _classe) {
     var button = document.createElement("a");
     button.textContent = _text;
     if (link !== false) {
-        button.href = link;
+        button.href = "#modal-buy";
+        button.rel = "modal:open";
     }
     button.target = "_blank";
     button.classList.add(_classe);
 
     return button;
 }
+
+$(document).ready(function () {
+    var buyButton = document.querySelectorAll(".buy-button");
+    console.log(buyButton);
+    
+    buyButton.forEach(function (btt) {
+        console.log(btt)
+        
+        btt.addEventListener("click", function (event, btt) {
+            console.log("clicou");
+            console.log(event);
+            console.log(btt);
+        });
+    })
+})

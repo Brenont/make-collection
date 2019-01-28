@@ -1,0 +1,33 @@
+.modal{
+    border-radius: 2px;
+    padding: 25px 30px;
+    max-width: 450px;
+}
+
+.modal p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-btt{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.modal .container-btt button {
+    padding: 6px 15px;
+    background-color: #282828;
+    color: #e6e6e6;
+    cursor: pointer;
+    border: none;
+    margin: 15px 10px 5px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 18px;
+}
+
+.container-btt .ml-icon-modal{
+    height: 35px;
+    width: auto;
+    margin: 5px 10px 5px;
+}
