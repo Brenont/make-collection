@@ -10,5 +10,6 @@ $(document).ready(function () {
         autoplaySpeed: 2500,
         adaptiveHeight: true,
         appendArrows: '',
+        adaptiveHeight: true,
     });
 });
