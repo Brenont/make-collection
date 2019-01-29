@@ -1,15 +1,13 @@
 $(document).ready(function () {
-    $('.single-item').slick({
+    $('.slider-lookbook').slick({
         dots: true,
         infinite: true,
-        speed: 750,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 2000,
         adaptiveHeight: true,
-        appendArrows: '',
-        adaptiveHeight: true,
+        appendArrows: false,
     });
-});
+})

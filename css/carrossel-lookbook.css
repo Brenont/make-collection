@@ -1,0 +1,106 @@
+#content {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.slick-dotted.slick-slider {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 20px;
+}
+
+.container-carrossel {
+    width: 100%;
+}
+
+
+.slider-lookbook img {
+    height: 250px;
+    width: auto;
+}
+
+.side-container img {
+    height: 250px;
+    width: auto;
+}
+
+.side-container {
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+@media(min-width:400px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slick-dotted.slick-slider {
+        max-width: 450px;
+    }
+
+    .slider-lookbook img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .side-container img {
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media(min-width:930px) {
+    .slick-dotted.slick-slider {
+        width: auto;
+        max-width: 450px;
+    }
+
+    .container-carrossel {
+        width: initial;
+    }
+
+    .slider-lookbook img {
+        max-height: 300px;
+        width: auto;
+    }
+
+    .side-container img {
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media(min-width:1212px) {
+    .slick-dotted.slick-slider {
+        width: auto;
+        max-width: 600px;
+    }
+
+    .slider-lookbook img {
+        max-height: 400px;
+        width: auto;
+    }
+
+    .side-container img {
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media(min-width:1310px) {
+    .slick-dotted.slick-slider {
+        width: auto;
+        max-width: 625px;
+    }
+
+    .slider-lookbook img {
+        max-height: 450px;
+        width: auto;
+    }
+
+    .side-container img {
+        height: 450px;
+        width: auto;
+    }
+}
