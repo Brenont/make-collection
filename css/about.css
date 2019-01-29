@@ -17,6 +17,9 @@
 .container-about h1 {
     padding: 15px 0px;
     font-size: 26px;
+    font-family: 'Playfair Display', serif;
+    color: #232323;
+    letter-spacing: 2px;
 }
 
 .container-about p {

@@ -1,0 +1,47 @@
+.shop-now {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.shop-now button {
+    background-color: #282828;
+    color: #e6e6e6;;
+    padding: 10px 35px;
+    border: none;
+    box-shadow: 1px 1px 9px #4e4e4e;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.prev-about-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px 40px;
+    max-width: 450px;
+}
+
+.prev-about-container h1 {
+    font-size: 28px;
+    border-bottom: 0.5px #5a5a5af7 solid;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #232323;
+    letter-spacing: 3px;
+}
+
+.prev-about-container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.prev-about-container p a {
+    color: #4665A1;
+    text-decoration: none;
+    cursor: pointer;
+}
