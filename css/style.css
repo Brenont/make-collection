@@ -135,7 +135,7 @@ footer .footer-links a, .footer-links h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     /* flex-direction: column; */
 }
 
