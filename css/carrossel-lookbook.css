@@ -15,7 +15,6 @@
     width: 100%;
 }
 
-
 .slider-lookbook img {
     height: 180px;
     width: auto;
@@ -24,6 +23,7 @@
 .side-container img {
     height: 150px;
     width: auto;
+    box-shadow: 2px 2px 5px #000000c7;
 }
 
 .side-container {
@@ -57,6 +57,7 @@
     margin-bottom: 30px;
     color: #232323;
     font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 
 @media(min-width:400px) {

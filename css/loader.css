@@ -9,6 +9,7 @@
     flex-direction: column;
     transition: 1.5s;
     z-index: 100;
+    overflow: hidden;
 }
 
 #loader h1 {
