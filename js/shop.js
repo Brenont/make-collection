@@ -3,8 +3,14 @@ var containerProducts = document.querySelector("#container-products");
 $.getJSON("js/products.json", function (data) {
     const products = data.products;
 
+    // for(item of products) {
+    // console.log(item);
+    // buildShop()
+    // }
+
     products.forEach(function (product, index) {
         buildShop(product, index);
+        // console.log(product, index);
     });
 
 });
@@ -53,16 +59,41 @@ function buildButton(link, _text, _classe) {
 }
 
 $(document).ready(function () {
-    var buyButton = document.querySelectorAll(".buy-button");
-    console.log(buyButton);
-    
-    buyButton.forEach(function (btt) {
-        console.log(btt)
-        
-        btt.addEventListener("click", function (event, btt) {
-            console.log("clicou");
-            console.log(event);
-            console.log(btt);
-        });
-    })
-})
+    var productsDiv = document.querySelectorAll(".product");
+
+    var bttArray = new Array;
+
+    productsDiv.forEach(function (div) {
+        let btt = div.children[2];
+        bttArray.push(btt);
+    });
+
+    bttArray.forEach(function (button, index) {
+
+        button.addEventListener("click", function () {
+
+            $.getJSON("js/products.json", function (data) {
+                var link = data.products[index].link;
+
+                var modalButton = document.querySelector(".modal-buy-button");
+                modalButton.target = "_blank";
+                modalButton.href = link;
+            });
+        })
+    });
+});
+
+// $(document).ready(function () {
+//     var buyButton = document.querySelectorAll(".buy-button");
+//     console.log(buyButton);
+
+//     buyButton.forEach(function (btt) {
+//         console.log(btt)
+
+//         btt.addEventListener("click", function (event, btt) {
+//             console.log("clicou");
+//             console.log(event);
+//             console.log(btt);
+//         });
+//     })
+// })
