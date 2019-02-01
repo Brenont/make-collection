@@ -24,6 +24,7 @@
 
 .container-about p {
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 @media(min-width:768px) {
