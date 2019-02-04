@@ -3,14 +3,8 @@ var containerProducts = document.querySelector("#container-products");
 $.getJSON("js/products.json", function (data) {
     const products = data.products;
 
-    // for(item of products) {
-    // console.log(item);
-    // buildShop()
-    // }
-
     products.forEach(function (product, index) {
         buildShop(product, index);
-        // console.log(product, index);
     });
 
 });
@@ -82,18 +76,3 @@ $(document).ready(function () {
         })
     });
 });
-
-// $(document).ready(function () {
-//     var buyButton = document.querySelectorAll(".buy-button");
-//     console.log(buyButton);
-
-//     buyButton.forEach(function (btt) {
-//         console.log(btt)
-
-//         btt.addEventListener("click", function (event, btt) {
-//             console.log("clicou");
-//             console.log(event);
-//             console.log(btt);
-//         });
-//     })
-// })

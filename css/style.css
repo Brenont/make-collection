@@ -64,7 +64,6 @@ nav a:hover {
 
 .page-bar {
     width: 100%;
-    /* background-color: #000; */
     background-color: #282828;
     display: flex;
     justify-content: center;
@@ -89,7 +88,6 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 10px 5px 20px; */
     padding: 20px 5px 15px;
 }
 
@@ -113,7 +111,6 @@ footer .footer-links {
     max-width: 500px;
     justify-content: flex-start;
     margin: 3px 5px 3px 25px;
-    /* color: #5c5c5c; */
 }
 
 footer .footer-links a, .footer-links h3 {
@@ -135,8 +132,6 @@ footer .footer-links a, .footer-links h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    /* flex-direction: column; */
 }
 
 @media(min-width:768px) {

@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     display: -webkit-flex;
-    /* flex-direction: column; */
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
@@ -28,7 +27,6 @@
 .container-products .product .buy-button {
     border: none;
     padding: 6px 15px;
-    /* background: #161616; */
     background-color: #282828;
     color: #e6e6e6;
     cursor: pointer;
@@ -36,7 +34,6 @@
 }
 
 .container-products .product .soldOut-button {
-    /* color: #333; */
     color: maroon;
     font-size: 18px;
 }
