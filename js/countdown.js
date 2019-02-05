@@ -3,7 +3,7 @@ body.style.overflow = "hidden";
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 7, 2019 00:00:01").getTime();
+var countDownDate = new Date("Feb 7, 2019 22:00:00").getTime();
 
 var now = new Date().getTime();
 
