@@ -52,7 +52,9 @@ function buildButton(link, _text, _classe) {
     return button;
 }
 
-$(document).ready(function () {
+// $(document).ready(function () {
+    window.addEventListener("load", function() {
+        
     var productsDiv = document.querySelectorAll(".product");
 
     var bttArray = new Array;

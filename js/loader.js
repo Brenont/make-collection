@@ -6,12 +6,12 @@ window.addEventListener("load", function () {
     loader.classList.add("hide-loader");
     setTimeout(function () {
         loader.style.display = "none";
-        var test = setInterval(function() {
-            if(now - countDownDate > 0){
-                body.style.overflow = "initial";
-                console.log("load atrapalhando");
-                clearInterval(test);
-            }
-        }, 1000)
+        body.style.overflow = "initial";
+        // var test = setInterval(function() {
+            // if(now - countDownDate > 0){
+            //     console.log("load atrapalhando");
+            //     clearInterval(test);
+            // }
+        // }, 1000)
     }, 1500);
 })
