@@ -17,9 +17,9 @@ function buildShop(_product, _index) {
     product.appendChild(buildImg(_product.img));
     product.appendChild(buildTitle("h4", _product.name));
     if (_product.soldOut) {
-        product.appendChild(buildButton(false, "Esgotado", "soldOut-button"))
+        product.appendChild(buildButton(false, "Esgotado", "soldOut-button", false))
     } else {
-        product.appendChild(buildButton(_product.link, "Comprar", "buy-button"));
+        product.appendChild(buildButton(_product.link, "Comprar", "buy-button", _index));
     }
 
     containerProducts.appendChild(product);
@@ -39,42 +39,57 @@ function buildImg(imgSrc) {
     return imgSelector;
 }
 
-function buildButton(link, _text, _classe) {
+function buildButton(link, _text, _classe, _index) {
     var button = document.createElement("a");
     button.textContent = _text;
     if (link !== false) {
-        button.href = "#modal-buy";
+        button.href = "#modal-buy" + _index;
         button.rel = "modal:open";
     }
-    button.target = "_blank";
+    // button.target = "_blank";
     button.classList.add(_classe);
+    button.classList.add("open-modal");
 
     return button;
 }
 
 // $(document).ready(function () {
-    window.addEventListener("load", function() {
+//     window.addEventListener("load", function() {
+
+//     console.log("window event");
         
-    var productsDiv = document.querySelectorAll(".product");
+//     var productsDiv = document.querySelectorAll(".product");
+//     // console.log("productsDiv", productsDiv);
 
-    var bttArray = new Array;
+//     var bttArray = new Array;
+//     // console.log("ArrayOld", bttArray);
 
-    productsDiv.forEach(function (div) {
-        let btt = div.children[2];
-        bttArray.push(btt);
-    });
+//     productsDiv.forEach(function (div) {
+//         let btt = div.children[2];
+//         bttArray.push(btt);
 
-    bttArray.forEach(function (button, index) {
+//         // console.log('Each Array of the For', bttArray);
+//     });
 
-        button.addEventListener("click", function () {
+//     bttArray.forEach(function (button, index) {
+//         // console.log(button);
 
-            $.getJSON("js/products.json", function (data) {
-                var link = data.products[index].link;
+//         button.addEventListener("click", function () {
+//             // console.log(index);
 
-                var modalButton = document.querySelector(".modal-buy-button");
-                modalButton.target = "_blank";
-                modalButton.href = link;
-            });
-        })
-    });
-});
+//             $.getJSON("js/products.json", function (data) {
+//                 var link = data.products[index].link;
+//                 // console.log(index);
+//                 // console.log("link", data.products[index].link);
+
+//                 var modalButton = document.querySelector(".modal-buy-button");
+//                 console.log(modalButton);
+//                 modalButton.target = "_blank";
+//                 modalButton.href = link;
+//                 console.log("lastest", modalButton);
+//             });
+//         });
+//     });
+// });
+
+// window.addEventListener("load", linkModal());
